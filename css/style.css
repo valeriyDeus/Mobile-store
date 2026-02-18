@@ -1265,8 +1265,6 @@ html:not(.touch) .item-product__add-cart.is-added {
   display: grid;
   align-items: start;
   row-gap: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
 }
 .item-post__image {
   overflow: hidden;
@@ -1297,6 +1295,9 @@ html:not(.touch) .item-product__add-cart.is-added {
 }
 .item-post__image img {
   transition: transform 0.3s;
+}
+.item-post__body {
+  text-transform: uppercase;
 }
 .item-post__meta {
   margin-bottom: 0.375rem;
