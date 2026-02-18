@@ -19,4 +19,6 @@ const starRating = () => {
     }
   });
 };
-starRating();
+if (document.querySelector("[data-star-rating]")) {
+  starRating();
+}
