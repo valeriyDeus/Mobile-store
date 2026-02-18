@@ -1,7 +1,6 @@
-import { o as objectModules, p as bodyLockStatus, q as bodyLock, r as bodyUnlock } from "./app.min.js";
+import { o as objectModules, h as bodyLockStatus, i as bodyLock, j as bodyUnlock } from "./app.min.js";
 /* empty css                */
 import "./reviewCart.min.js";
-import "./slider.min.js";
 /* empty css                      */
 class Modal {
   #isOpen = false;

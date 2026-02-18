@@ -1,6 +1,5 @@
 import { g as getHash, d as dataMediaQueries, s as setHash, _ as _slideDown, a as _slideUp, b as getProducts, f as formQuantity, c as syncCartFromStorage, e as formatingValue } from "./app.min.js";
-import "./sliderBlock.min.js";
-import "./slider.min.js";
+/* empty css                */
 /* empty css             */
 function tabs() {
   const tabs2 = document.querySelectorAll("[data-tabs]");
