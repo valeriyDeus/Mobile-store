@@ -560,9 +560,7 @@ const saveToLocalStorage = (product, counter) => {
   }
 };
 const addToCart = (e) => {
-  console.log(e.target, "До");
   if (!e.target.closest("[data-add-to-cart]")) return;
-  console.log(e.target, "После");
   const addToCartButton = e.target.closest("[data-add-to-cart]");
   const currentProduct = addToCartButton.closest("[data-product-cart]");
   if (!currentProduct) return;
@@ -7195,7 +7193,6 @@ if (sliderBlocks.length) {
 window["FLS"] = true;
 detectTouchDevice();
 headerHeight();
-console.log("app.js executed");
 export {
   _slideDown as _,
   _slideUp as a,
