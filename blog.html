@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<noscript>
+			<style data-preloader="true">
+				body:not(.loaded) > *:not(.preloader) {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loaded body > *:not(.preloader) {
+      transition: opacity 0.5s ease;
+      opacity: 1;
+      visibility: visible;
+    }
+			</style>
+		</noscript>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Lato-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Jost-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Jost-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+		<title>Blog Page</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1771416122949"></script>
+		<script type="module" crossorigin="" src="./js/shop.min2.js?v=1771416122949"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1771416122949">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header" data-header="" data-header-scroll="">
+				<div class="header__container">
+					<a class="header__logo logo" href="" data-logo="">
+						<img src="./assets/img/logo.webp" width="143" height="48" loading="eager" alt="Logo">
+					</a>
+					<div class="header__menu menu" data-menu="">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link menu__link--dropdown" data-submenu-link="">Pages</a>
+									<ul class="menu__submenu-list list-submenu" data-submenu="">
+										<li class="list-submenu__item">
+											<a href="#" class="list-submenu__back" data-submenu-link-back="">Back</a>
+										</li>
+										<li class="list-submenu__item">
+											<a href="#" class="list-submenu__link">Page 1</a>
+										</li>
+										<li class="list-submenu__item">
+											<a href="#" class="list-submenu__link">Page 2</a>
+										</li>
+										<li class="list-submenu__item">
+											<a href="#" class="list-submenu__link">Page 3</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link menu__link--active">Blogs</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions">
+						<button class="header__action header__action--search" data-form-search-button="" aria-label="Search products" type="button">
+							<svg>
+								<use xlink:href="./assets/img/spritemap.svg#sprite-search"></use>
+							</svg>
+						</button>
+						<a class="header__action header__action--account" href="#" aria-label="Log in to your personal account">
+							<svg>
+								<use xlink:href="./assets/img/spritemap.svg#sprite-account"></use>
+							</svg>
+						</a>
+						<a class="header__action header__action--cart" href="#" data-cart="" aria-label="Your shopping cart">
+							<svg>
+								<use xlink:href="./assets/img/spritemap.svg#sprite-cart"></use>
+							</svg>
+							<span>(0)</span>
+						</a>
+					</div>
+					<div class="header__search search-header" data-form-header="">
+						<form class="search-header__form search-form form" action="#" method="GET" data-search-form="" data-form-validation="">
+							<input class="search-form__input input form__input" data-input="" type="text" name="form[search]" placeholder="Search">
+							<button class="search-form__button form__button" aria-label="Search products" type="submit">
+								<svg>
+									<use xlink:href="./assets/img/spritemap.svg#sprite-search"></use>
+								</svg>
+							</button>
+						</form>
+						<div class="search-header__body body-search">
+							<button class="body-search__close" data-form-search-close="" aria-label="Close search form" type="button">
+								<svg>
+									<use xlink:href="./assets/img/spritemap.svg#sprite-cross"></use>
+								</svg>
+							</button>
+							<div class="body-search__section body-search__section--taps">
+								<div class="body-search__icon" aria-hidden="true">
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-search"></use>
+									</svg>
+								</div>
+								<ul class="body-search__list body-search__list--taps"></ul>
+							</div>
+							<div class="body-search__section body-search__section--products">
+								<div class="body-search__title">Products</div>
+								<div class="body-search__items"></div>
+							</div>
+							<div class="body-search__section">
+								<div class="body-search__title">Popular requests</div>
+								<ul class="body-search__list body-search__list--tags">
+									<li class="body-search__item">
+										<a class="body-search__link" href="#">Phones</a>
+									</li>
+									<li class="body-search__item">
+										<a class="body-search__link" href="#">Watches</a>
+									</li>
+									<li class="body-search__item">
+										<a class="body-search__link" href="#">Accessories</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<button class="burger-icon" data-menu-open="" aria-label="Open menu" type="button">
+						<span></span>
+					</button>
+				</div>
+			</header>
+			<main class="page page--blog">
+				<section class="breadcrumbs-block" data-breadcrumbs-block="">
+					<div class="breadcrumbs-block__container">
+						<h1 class="breadcrumbs-block__title title title--big" data-title="">Blog</h1>
+						<ul class="breadcrumbs-block__list">
+							<li class="breadcrumbs-block__item">
+								<a class="breadcrumbs-block__link" href="#">Home</a>
+							</li>
+							<li class="breadcrumbs-block__item">
+								<span class="breadcrumbs-block__last">Blog</span>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<div class="page__grid-carts carts-grid carts-grid--post" data-render-carts="posts">
+					<div class="carts-grid__container">
+						<button class="carts-grid__filter-icon" data-filter-open="" aria-label="Open filter">
+							<svg>
+								<use xlink:href="./assets/img/spritemap.svg#sprite-filter"></use>
+							</svg>
+						</button>
+						<aside class="filter" data-filter="">
+							<button class="filter__close" data-filter-close="" aria-label="Close filter">
+								<svg>
+									<use xlink:href="./assets/img/spritemap.svg#sprite-cross"></use>
+								</svg>
+							</button>
+							<form class="filter__form search-form form" action="#" method="GET" data-search-form="" data-form-validation="">
+								<input class="filter__input input search-form__input form__input" data-input="" type="text" name="form[search]" placeholder="Search">
+								<button class="filter__button search-form__button form__button" aria-label="Search" type="submit">
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-search"></use>
+									</svg>
+								</button>
+							</form>
+							<div class="filter__content">
+								<nav class="filter__body">
+									<h2 class="filter__title title" data-title="">categories</h2>
+									<ul class="filter__list" data-filter-type="categories">
+										<li class="filter__item">
+											<a class="filter__link filter__link--active" data-filter-link="all" href="#">All</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__link" data-filter-link="phones" href="#">Phones</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__link" data-filter-link="accessories" href="#">Accessories</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__link" data-filter-link="tablets" href="#">Tablets</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__link" data-filter-link="watches" href="#">Watches</a>
+										</li>
+									</ul>
+								</nav>
+								<nav class="filter__body" data-latest-posts="">
+									<h2 class="filter__title title" data-title="">Latest Posts</h2>
+									<ul class="filter__list"></ul>
+								</nav>
+								<nav class="filter__body">
+									<h2 class="filter__title title">Social links</h2>
+									<ul class="filter__list">
+										<li class="filter__item">
+											<a class="filter__link" href="#" target="_blank">Facebook</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__link" href="#" target="_blank">Instagram</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__link" href="#" target="_blank">Twitter</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__link" href="#" target="_blank">Youtube</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__link" href="#" target="_blank">Pinterest</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</aside>
+						<div class="carts-grid__content">
+							<div class="carts-grid__header">
+								<div class="carts-grid__results"></div>
+								<div class="carts-grid__sort sort" data-sort="">
+									<button class="sort__button" data-value="latest" type="button" aria-expanded="false">
+										<span>Latest</span>
+										<svg>
+											<use xlink:href="./assets/img/spritemap.svg#sprite-chevron"></use>
+										</svg>
+									</button>
+									<ul class="sort__list" aria-hidden="true">
+										<li class="sort__item" data-value="popular">Most Popular</li>
+										<li class="sort__item" data-value="oldest">Oldest</li>
+									</ul>
+								</div>
+							</div>
+							<div class="carts-grid__items"></div>
+							<div class="carts-grid__pagination pagination" data-pagination="767.98">
+								<a class="pagination__arrow pagination__arrow--prev" href="#" aria-label="Previous page">
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-chevron"></use>
+									</svg>
+								</a>
+								<ul class="pagination__list"></ul>
+								<a class="pagination__arrow pagination__arrow--next" href="#" aria-label="Next page">
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-chevron"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="loader loader--fixed" data-loader="">
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<section class="page__subscribe-us subscribe-us">
+					<div class="subscribe-us__container">
+						<div class="subscribe-us__left">
+							<h2 class="subscribe-us__title title title--small" data-title="">Subscribe Us now</h2>
+							<div class="subscribe-us__text">
+								<p>Get latest news, updates and deals directly mailed to your inbox.</p>
+							</div>
+						</div>
+						<div class="subscribe-us__right">
+							<form class="subscribe-us__form form" action="#" method="post" data-form-validation="">
+								<input class="subscribe-us__input input form__input" type="email" name="form[email]" placeholder="Your email address here" data-input="" data-form-required="email" data-form-validate="">
+								<button class="subscribe-us__button form__button button button--form" data-button="" type="submit">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</section>
+				<section class="page__insta-shop shop-insta">
+					<div class="shop-insta__container">
+						<h2 class="shop-insta__title title title--small" data-title="">Shop our insta</h2>
+						<ul class="shop-insta__list">
+							<li class="shop-insta__item">
+								<a class="shop-insta__link" href="#" aria-label="Our instagram">
+									<div class="shop-insta__image">
+										<img src="./assets/img/shop-insta/01.webp" width="244" height="244" loading="lazy" alt="Image">
+									</div>
+									<div class="shop-insta__icon" aria-hidden="true">
+										<svg>
+											<use xlink:href="./assets/img/spritemap.svg#sprite-s-instagram"></use>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="shop-insta__item">
+								<a class="shop-insta__link" href="#" aria-label="Our instagram">
+									<div class="shop-insta__image">
+										<img src="./assets/img/shop-insta/02.webp" width="244" height="244" loading="lazy" alt="Image">
+									</div>
+									<div class="shop-insta__icon" aria-hidden="true">
+										<svg>
+											<use xlink:href="./assets/img/spritemap.svg#sprite-s-instagram"></use>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="shop-insta__item">
+								<a class="shop-insta__link" href="#" aria-label="Our instagram">
+									<div class="shop-insta__image">
+										<img src="./assets/img/shop-insta/03.webp" width="244" height="244" loading="lazy" alt="Image">
+									</div>
+									<div class="shop-insta__icon" aria-hidden="true">
+										<svg>
+											<use xlink:href="./assets/img/spritemap.svg#sprite-s-instagram"></use>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="shop-insta__item">
+								<a class="shop-insta__link" href="#" aria-label="Our instagram">
+									<div class="shop-insta__image">
+										<img src="./assets/img/shop-insta/04.webp" width="244" height="244" loading="lazy" alt="Image">
+									</div>
+									<div class="shop-insta__icon" aria-hidden="true">
+										<svg>
+											<use xlink:href="./assets/img/spritemap.svg#sprite-s-instagram"></use>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="shop-insta__item">
+								<a class="shop-insta__link" href="#" aria-label="Our instagram">
+									<div class="shop-insta__image">
+										<img src="./assets/img/shop-insta/05.webp" width="244" height="244" loading="lazy" alt="Image">
+									</div>
+									<div class="shop-insta__icon" aria-hidden="true">
+										<svg>
+											<use xlink:href="./assets/img/spritemap.svg#sprite-s-instagram"></use>
+										</svg>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+			<footer class="footer" data-footer="">
+				<div class="footer__container">
+					<div class="footer__content content-footer">
+						<div class="content-footer__left">
+							<a class="footer__logo logo" href="" data-logo="">
+								<img src="./assets/img/logo.webp" width="143" height="48" loading="lazy" alt="Logo">
+							</a>
+							<div class="content-footer__text">
+								<p>
+									Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat
+            nullam fringilla.
+								</p>
+							</div>
+							<div class="content-footer__socials socials" data-socials="">
+								<ul class="socials__list">
+									<li class="socials__item">
+										<a class="socials__link" href="#" target="_blank" aria-label="Facebook">
+											<svg>
+												<use xlink:href="./assets/img/spritemap.svg#sprite-s-facebook"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item">
+										<a class="socials__link" href="#" target="_blank" aria-label="Instagram">
+											<svg>
+												<use xlink:href="./assets/img/spritemap.svg#sprite-s-instagram"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item">
+										<a class="socials__link" href="#" target="_blank" aria-label="Twitter">
+											<svg>
+												<use xlink:href="./assets/img/spritemap.svg#sprite-s-twitter"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item">
+										<a class="socials__link" href="#" target="_blank" aria-label="Linkedin">
+											<svg>
+												<use xlink:href="./assets/img/spritemap.svg#sprite-s-linkedin"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item">
+										<a class="socials__link" href="#" target="_blank" aria-label="You tube">
+											<svg>
+												<use xlink:href="./assets/img/spritemap.svg#sprite-s-youtube"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="content-footer__right">
+							<div class="content-footer__column column-footer">
+								<h3 class="column-footer__title">Quick links</h3>
+								<nav class="column-footer__body">
+									<ul class="column-footer__list">
+										<li class="column-footer__item">
+											<a href="#" class="column-footer__link">Home</a>
+										</li>
+										<li class="column-footer__item">
+											<a href="#" class="column-footer__link">Shop</a>
+										</li>
+										<li class="column-footer__item">
+											<a href="#" class="column-footer__link">About</a>
+										</li>
+										<li class="column-footer__item">
+											<a href="#" class="column-footer__link">Blogs</a>
+										</li>
+										<li class="column-footer__item">
+											<a href="#" class="column-footer__link">Contact</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div class="content-footer__column column-footer">
+								<h3 class="column-footer__title">Help & info</h3>
+								<nav class="column-footer__body">
+									<ul class="column-footer__list">
+										<li class="column-footer__item">
+											<a href="#" class="column-footer__link">Track Your Order</a>
+										</li>
+										<li class="column-footer__item">
+											<a href="#" class="column-footer__link">Returns policies</a>
+										</li>
+										<li class="column-footer__item">
+											<a href="#" class="column-footer__link">Shipping + Delivery</a>
+										</li>
+										<li class="column-footer__item">
+											<a href="#" class="column-footer__link">Contact Us</a>
+										</li>
+										<li class="column-footer__item">
+											<a href="#" class="column-footer__link">Faqs</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div class="content-footer__column column-footer">
+								<ul class="our-stores__contact-list list-contact" data-list-contact="">
+									<li class="list-contact__item">
+										<h3 class="list-contact__title title title--contact" data-title="">Contact us</h3>
+										<address class="list-contact__address address-contact">
+											<div class="address-contact__body">
+												<div class="address-contact__item">
+													<p class="address-contact__text">Do you have any queries or suggestions?</p>
+													<a class="address-contact__link address-contact__link--underline" href="mailto:yourinfo@gmail.com">yourinfo@gmail.com</a>
+												</div>
+												<div class="address-contact__item">
+													<div class="address-contact__text">If you need support? Just give us a call.</div>
+													<a class="address-contact__link address-contact__link--underline" href="tel:+5511122233344">+55 111 222 333 44</a>
+												</div>
+											</div>
+										</address>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copy copy-footer">
+					<div class="copy-footer__container">
+						<div class="copy-footer__item">
+							<div class="copy-footer__text">We ship with:</div>
+							<div class="copy-footer__icons">
+								<div class="copy-footer__icon">
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-b-dhl"></use>
+									</svg>
+								</div>
+								<div class="copy-footer__icon">
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-b-post"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="copy-footer__item">
+							<div class="copy-footer__text">Payment options:</div>
+							<div class="copy-footer__icons">
+								<div class="copy-footer__icon">
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-p-visa"></use>
+									</svg>
+								</div>
+								<div class="copy-footer__icon">
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-p-master-cart"></use>
+									</svg>
+								</div>
+								<div class="copy-footer__icon">
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-p-pay-pal"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="copy-footer__item">
+							<div class="copy-footer__text">
+								© Copyright 2023 MiniStore.
+								<span>
+									Design by
+									<a href="#">TemplatesJungle</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- <include src="@components/modal/modal.html" locals="{}"></include> -->
+		<ul id="dev-panel">
+			<li>
+				<a href="shop.html">shop</a>
+			</li>
+			<li>
+				<a href="product.html">product</a>
+			</li>
+			<li>
+				<a href="post.html">post</a>
+			</li>
+			<li>
+				<a href="index.html">home</a>
+			</li>
+			<li>
+				<a href="contact.html">contact</a>
+			</li>
+			<li>
+				<a href="checkout.html">checkout</a>
+			</li>
+			<li>
+				<a href="cart.html">cart</a>
+			</li>
+			<li>
+				<a href="blog.html">blog</a>
+			</li>
+			<li>
+				<a href="about-us.html">about-us</a>
+			</li>
+		</ul>
+		<style>
+			#dev-panel{
+				position: fixed;
+				left: 10px;
+				padding: 15px 25px 15px 15px;
+				border-radius: 0 10px 10px 0;
+				top: 10%;
+				color: #fff;
+				background-color: rgba(0, 0, 0, 0.5);
+				transform: translate(-100%, 0px);
+				max-height: 80svh;
+				overflow: auto;
+				transition: all 300ms;
+				z-index: 9999;
+				font-family: Roboto', sans-serif;
+			}
+			#dev-panel li{
+				list-style:none;
+			}
+			#dev-panel hr{
+				border-bottom: 1px solid #fff;
+			}
+			#dev-panel:hover{
+				left: 0px;
+				transform: translate(0, 0);
+			}
+			#dev-panel a{
+				text-decoration: none;
+				text-transform: capitalize;
+				color: inherit;
+			}
+			#dev-panel a:hover {
+				text-decoration: underline;
+			}
+			#dev-panel li:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		</style>
+	</body>
+</html>

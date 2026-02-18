@@ -1,0 +1,152 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "type": "phones",
+      "brand": "apple",
+      "title": "Apple iPhone 10",
+      "image": "assets/img/products/mobile/01.png",
+      "price": 980,
+      "link": "#",
+      "count": 4
+    },
+    {
+      "id": 2,
+      "type": "phones",
+      "brand": "apple",
+      "title": "Apple iPhone 11",
+      "image": "assets/img/products/mobile/02.png",
+      "price": 1100,
+      "link": "#",
+      "count": 8
+    },
+    {
+      "id": 3,
+      "type": "phones",
+      "brand": "apple",
+      "title": "Apple iPhone 8",
+      "image": "assets/img/products/mobile/03.png",
+      "price": 780,
+      "link": "#",
+      "count": 1
+    },
+    {
+      "id": 4,
+      "type": "phones",
+      "brand": "apple",
+      "title": "Apple iPhone 13 Pro",
+      "image": "assets/img/products/mobile/04.png",
+      "price": 1500,
+      "link": "#",
+      "count": 5
+    },
+    {
+      "id": 5,
+      "type": "phones",
+      "brand": "apple",
+      "title": "Apple iPhone 17 Pro Max",
+      "image": "assets/img/products/mobile/01.png",
+      "price": 2300,
+      "link": "#",
+      "count": 9
+    },
+    {
+      "id": 6,
+      "type": "phones",
+      "brand": "apple",
+      "title": "Apple iPhone 14",
+      "image": "assets/img/products/mobile/02.png",
+      "price": 1100,
+      "link": "#",
+      "count": 15
+    },
+    {
+      "id": 7,
+      "type": "watches",
+      "brand": "apple",
+      "title": "Apple Watch SE 3",
+      "image": "assets/img/products/watches/01.png",
+      "price": 870,
+      "link": "#",
+      "count": 12
+    },
+    {
+      "id": 8,
+      "sku": "1234",
+      "type": "watches",
+      "brand": "apple",
+      "title": "Apple Watch Series 11",
+      "image": "assets/img/products/watches/02.png",
+      "price": 1200,
+      "rating": 5.0,
+      "category": ["Watch", "Screen touch"],
+      "colors": ["orange", "green", "blue", "black"],
+      "sizes": ["xl", "l", "m", "s"],
+      "tags": ["classic", "modern"],
+      "desc": "Justo, cum feugiat imperdiet nulla molestie ac vulputate scelerisque amet. Bibendum adipiscing platea blandit sit sed quam semper rhoncus. Diam ultrices maecenas consequat eu tortor orci, cras lectus mauris, cras egestas quam venenatis neque.",
+      "link": "#",
+      "count": 4,
+      "reviews": 2
+    },
+    {
+      "id": 9,
+      "type": "watches",
+      "brand": "apple",
+      "title": "Apple Watch Ultra",
+      "image": "assets/img/products/watches/03.png",
+      "price": 2350,
+      "link": "#",
+      "count": 20
+    },
+    {
+      "id": 10,
+      "type": "watches",
+      "brand": "apple",
+      "title": "Apple Watch Ultra + eSIM",
+      "image": "assets/img/products/watches/04.png",
+      "price": 650,
+      "link": "#",
+      "count": 17
+    },
+    {
+      "id": 11,
+      "type": "watches",
+      "brand": "apple",
+      "title": "Apple Watch Series 10",
+      "image": "assets/img/products/watches/01.png",
+      "price": 870,
+      "link": "#",
+      "count": 5
+    },
+    {
+      "id": 12,
+      "type": "watches",
+      "brand": "apple",
+      "title": "Apple Watch Series 11",
+      "image": "assets/img/products/watches/02.png",
+      "price": 680,
+      "link": "#",
+      "count": 14
+    },
+    {
+      "id": 13,
+      "type": "tablets",
+      "brand": "apple",
+      "title": "Apple iPad 11 Pro",
+      "image": "assets/img/products/tablets/01.jpg",
+      "price": 2000,
+      "link": "#",
+      "count": 7
+    },
+    {
+      "id": 14,
+      "type": "tablets",
+      "brand": "samsung",
+      "title": "Samsung Tab S10",
+      "image": "assets/img/products/tablets/02.jpg",
+      "price": 1800,
+      "link": "#",
+      "count": 14
+    }
+  ]
+}

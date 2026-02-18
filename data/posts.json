@@ -1,0 +1,128 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "type": "posts",
+      "theme": "phones",
+      "popular": true,
+      "link": "#",
+      "title": "Get some cool gadgets in 2023",
+      "image": "assets/img/posts/01.png",
+      "category": "gadgets",
+      "date": "2026-01-25"
+    },
+    {
+      "id": 2,
+      "type": "posts",
+      "theme": "accessories",
+      "link": "#",
+      "title": "Technology hack yoy won’t get",
+      "image": "assets/img/posts/02.png",
+      "category": "technology",
+      "date": "2026-02-09"
+    },
+    {
+      "id": 3,
+      "type": "posts",
+      "theme": "tablets",
+      "link": "#",
+      "title": "Top 10 small camera in the world",
+      "image": "assets/img/posts/03.png",
+      "category": "camera",
+      "date": "2025-12-25"
+    },
+    {
+      "id": 4,
+      "type": "posts",
+      "theme": "phones",
+      "link": "#",
+      "title": "Get some cool gadgets in 2023",
+      "image": "assets/img/posts/04.png",
+      "category": "gadgets",
+      "date": "2025-11-20"
+    },
+    {
+      "id": 5,
+      "type": "posts",
+      "theme": "tablets",
+      "popular": true,
+      "link": "#",
+      "title": "Technology hack yoy won’t get",
+      "image": "assets/img/posts/05.png",
+      "category": "technology",
+      "date": "2026-01-28"
+    },
+    {
+      "id": 6,
+      "type": "posts",
+      "theme": "phones",
+      "link": "#",
+      "title": "Top 10 small camera in the world",
+      "image": "assets/img/posts/06.png",
+      "category": "camera",
+      "date": "2026-02-10"
+    },
+    {
+      "id": 7,
+      "type": "posts",
+      "theme": "tablets",
+      "link": "#",
+      "title": "Get some cool gadgets in 2023",
+      "image": "assets/img/posts/07.png",
+      "category": "gadgets",
+      "date": "2025-12-25"
+    },
+    {
+      "id": 8,
+      "type": "posts",
+      "theme": "tablets",
+      "link": "#",
+      "title": "Technology hack yoy won’t get",
+      "image": "assets/img/posts/08.png",
+      "category": "technology",
+      "date": "2026-01-12"
+    },
+    {
+      "id": 9,
+      "type": "posts",
+      "theme": "phones",
+      "link": "#",
+      "title": "Top 10 small camera in the world",
+      "image": "assets/img/posts/09.png",
+      "category": "camera",
+      "date": "2025-11-20"
+    },
+    {
+      "id": 10,
+      "type": "posts",
+      "theme": "phones",
+      "popular": true,
+      "link": "#",
+      "title": "Get some cool gadgets in 2023",
+      "image": "assets/img/posts/01.png",
+      "category": "gadgets",
+      "date": "2026-01-30"
+    },
+    {
+      "id": 11,
+      "type": "posts",
+      "theme": "accessories",
+      "link": "#",
+      "title": "Technology hack yoy won’t get",
+      "image": "assets/img/posts/02.png",
+      "category": "technology",
+      "date": "2026-02-01"
+    },
+    {
+      "id": 12,
+      "type": "posts",
+      "theme": "tablets",
+      "popular": true,
+      "link": "#",
+      "title": "Top 10 small camera in the world",
+      "image": "assets/img/posts/03.png",
+      "category": "camera",
+      "date": "2025-12-31"
+    }
+  ]
+}
